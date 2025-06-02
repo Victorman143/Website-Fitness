@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - RetosVIP</title>
+
+  <!-- Google Fonts Rubik -->
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,700" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<script src="js/main.js"></script>
+  
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/contacto.css" />
+</head>
+<body>
+
+ <!-- HERO + NAV -->
+  <!-- Hero con navbar dentro -->
+   <!-- section #1 -->
+  <section class="hero position-relative">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content d-flex flex-column justify-content-center align-items-center text-center text-white px-3">
+
+   <!-- NAVBAR transparente -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute top-0 w-100 px-3 py-2 glass-navbar">
+  <div class="container">
+    <a class="navbar-logo fw-bold text-white" href="index.html">RetosVIP</a>
+
+
+    <li class="nav-item d-flex align-items-center"><a class="nav-link" href="javascript:void(0);" id="openCart"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+    viewBox="0 0 24 24" stroke-width="1.5"
+    stroke="currentColor" class="icon-mobile">
+    <path stroke-linecap="round" stroke-linejoin="round"
+      d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993
+         1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125
+         1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0
+         1 5.513 7.5h12.974c.576 0 1.059.435 1.119
+         1.007ZM8.625 10.5a.375.375 0 1 1-.75 0
+         .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1
+         1-.75 0 .375.375 0 0 1 .75 0Z" />
+  </svg></a></li> 
+
+    <button class="navbar-toggler" type="button" aria-label="Toggle navigation" id="menuToggle" style="border: none;">
+      <span class="fas fa-bars text-white fs-2"></span>
+    </button>
+    <div id="overlay"></div>
+    
+    <div class="mobile-menu d-lg-none" id="mobileMenu">
+      <button class="close-btn" id="closeBtn">&times;</button>
+      <ul class="navbar-nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#planes" id="reto21dias">Reto 21 Días</a></li>
+        <li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre mi</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Contacto.html">Contacto</a></li>
+        
+      </ul>
+    </div>
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="index.html#planes">Reto 21 Días</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="clientes.html">Clientes</a></li>
+        <li class="nav-item"><a class="nav-link text-white"  href="sobremi.html">Sobre mi</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Contacto.html">Contacto</a></li>
+      </ul>
+
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a href="javascript:void(0);" id="openCartdesktop" class="nav-link" role="button" aria-label="Abrir carrito">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+      viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" class="icon">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993
+          1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125
+          1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0
+          1 5.513 7.5h12.974c.576 0 1.059.435 1.119
+          1.007ZM8.625 10.5a.375.375 0 1 1-.75 0
+          .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1
+          1-.75 0 .375.375 0 0 1 .75 0Z" />
+    </svg>
+  </a></li>
+      </ul>
+    
+  </div>
+</nav>
+
+      <!-- Contenido del hero -->
+      <div class="container hero-content2 hero-animacion">
+    <h1 id="titulo3" class="display-4 fw-bold animado cursor"></h1>
+    <p class="lead mt-3 animado" style="opacity: 0;">¿Tienes dudas o necesitas ayuda? ¡Estoy aquí para ti!</p>
+  </div>
+
+
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <!-- CONTACTO MEJORADO -->
+<section id="contacto" class="py-5" style="background-color: #f8f9fa;">
+  <div class="container d-flex justify-content-center">
+    <div class="row bg-white shadow rounded-4 p-4 w-100" style="max-width: 1400px;">
+
+      <!-- FORMULARIO -->
+<div class="col-md-6 border-end">
+  <h2 id="tittlcontact" class="mb-4 text-center">Contáctanos</h2>
+
+  <form id="contactForm" action="https://formsubmit.co/habbo_victorman1@hotmail.com" method="POST">
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="nombre" name="nombre" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="mb-3">
+      <label for="Motivo" class="form-label">Motivo</label>
+      <input type="text" class="form-control" id="motivo" name="motivo" required>
+    </div>
+    <div class="mb-3">
+      <label for="celular" class="form-label">Número celular</label>
+      <input type="text" class="form-control" maxlength="15" pattern="^\d+$"  id="celular" name="celular" required>
+    </div>
+    <div class="mb-3">
+      <label for="mensaje" class="form-label">Mensaje</label>
+      <textarea id="mensaje" class="form-control form-control-noresize" name="mensaje" rows="10" placeholder="Escribe tu mensaje..." required></textarea>
+    </div>
+
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
+    </div>
+  </form>
+
+  <div id="mensajeExito" class="alert alert-success mt-3" style="display:none;">
+  Su mensaje ha sido enviado correctamente, me comunicare con usted lo más pronto posible.
+</div>
+
+
+</div>
+      <!-- INFORMACIÓN DE CONTACTO -->
+      <div class="col-md-6 d-flex flex-column justify-content-center ps-md-4 pt-4 pt-md-0">
+        <div class="mb-4">
+          <h5 class="fw-bold">📍 Ubicación</h5>
+          <p class="mb-0">Barahona, Republica Dominicana</p>
+        </div>
+        <div class="mb-4">
+          <h5 class="fw-bold">📞 Numero de contacto</h5>
+          <p class="mb-0"><a href="https://wa.me/+1(829) 854-2153" target="_blank">+1 (829) 854-2153</a></p>
+        </div>
+        <div class="mb-4">
+          <h5 class="fw-bold">📧 Correo</h5>
+          <p class="mb-0">contacto@retosvip.com</p>
+        </div>
+        <div class="mb-4">
+          <h5 class="fw-bold">Más Info</h5>
+          <p class="mb-0">Puedes contáctarme via <a href="#barracontact">WhatsApp</a> que se encuentra en el recuadro debajo.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer mt-auto py-4  text-white">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      
+
+      <!-- Info de contacto -->
+       <section>
+<div class="barra-contacto d-flex flex-wrap justify-content-around align-items-center text-white py-4 px-3">
+  <div class="item-contacto d-flex align-items-center">
+    <a href="https://www.instagram.com/vianny_f.09/"><i class="fab fa-instagram icono"></i></a>
+    <div class="ms-2">
+      <div><strong>Instagram</strong></div>
+      <div><a href="https://www.instagram.com/vianny_f.09/">@vianny_f.09</a></div>
+    </div>
+  </div>
+  <div class="item-contacto d-flex align-items-center">
+    <a href=""><i class="fas fa-phone icono"></i></a>
+    <div class="ms-2">
+      <div><strong>Escribir al WhatsApp</strong></div>
+      <div><a href="">+1 (829) 854-2153</a></div>
+    </div>
+  </div>
+  <div class="item-contacto d-flex align-items-center">
+    <a href="mailto:Habbo_victorman1@hotmail.com"><i class="fas fa-envelope icono"></i></a>
+    <div class="ms-2">
+      <div><strong>Para más Info</strong></div>
+      <div><a href="mailto:Habbo_victorman1@hotmail.com">info@retosvip.com</a></div>
+    </div>
+  </div>
+  <div class="item-contacto d-flex align-items-center">
+    <i class="fas fa-clock icono"></i>
+    <div class="ms-2">
+      <div><strong>Asistencia</strong></div>
+      <div class="text-success">24 Horas</div>
+    </div>
+  </div>
+</div>
+</section>
+    <hr class="border-light" />
+    
+    <div class="copyright text-center">
+      <p>Copyright © 2025 All rights reserved.</p>
+      <small>RetosVIP made by <a href="https://www.instagram.com/nerdtoday_bosstomorrow/" target="_blank" rel="noopener noreferrer" class="text-white">Victor Sierra</a></small>
+    </div>
+    
+  </div>
+</footer>
+
+<!-- Sidebar del carrito -->
+<div id="cartSidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h2>Mi Carrito</h2>
+    <span id="closeCart" class="close-btn">&times;</span>
+  </div>
+  <hr class="border-secondary" />
+     <div class="cart-items" id="cartItems">
+    <table class="table" id="cartTable">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Precio</th>
+          <th style="color: red;">Eliminar</th>
+        </tr>
+      </thead>
+      <tbody id="cartTableBody">
+        <!-- Aquí irán las filas dinámicas con JS -->
+      </tbody>
+    </table>
+    <p id="emptyCartMessage">Tu carrito está vacío.</p>
+    
+  </div>
+  <div class="cart-footer">
+    <button id="btn-checkout" class="checkout-btn" onclick="window.location.href= 'checkout.html'">Finalizar Compra.</button>
+    <button id="btnTransfer" class="checkout-btn">Pago via Transferencia.</button>
+
+  </div>
+</div>
+
+
+<div id="mensaje-carrito" style="display:none; position: fixed; top: 20px; right: 20px; background: #ff2e63; color: white; padding: 10px 20px; border-radius: 5px; z-index: 9999;">
+  Producto ya está en el carrito.
+</div>
+
+<div class="popup-container">
+  <button class="close-popup">&times;</button>
+  <img src="img/tranferdatos.jpg" alt="Datos bancarios" class="popup-image" />
+  <div class="popup-message">Enviar voucher de la transferencia vía <a href="+1 (829) 854-2153" class="WhatsAppsss">WhatsApp</a> para confirmar el pago</div>
+</div>
+
+
+  
+</body>
+</html>

@@ -1,0 +1,91 @@
+body {
+  background-color: #f5f5f5;
+  font-family: 'Rubik', sans-serif;
+  padding-top: 80px; /* espacio para el header fijo */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+}
+
+/* Header transparente y botón negro */
+.checkout-header {
+  background: transparent;
+  backdrop-filter: none;
+  z-index: 1050;
+}
+
+.checkout-header .btn {
+  font-weight: 500;
+  border-radius: 30px;
+  padding: 6px 18px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+.checkout-header .btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Tarjetas (formulario y resumen) */
+.card {
+  border: none;
+  border-radius: 12px;
+}
+
+/* Estilo para ítems del resumen del pedido */
+.resumen-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 1rem;
+}
+
+.resumen-item img {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.resumen-item-info {
+  flex: 1;
+}
+
+/* Responsive para móviles */
+@media (max-width: 992px) {
+  .checkout-header .btn {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .card-contenedor {
+    order: -1; /* Mueve resumen del pedido arriba */
+  }
+
+  .card h2,
+  .card h4 {
+    font-size: 1.25rem;
+  }
+
+  .resumen-item {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .resumen-item img {
+    width: 60px;
+  }
+
+  .resumen-item-info p {
+    font-size: 0.9rem;
+  }
+}

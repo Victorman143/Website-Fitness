@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap" rel="stylesheet">
+  
+
+
+  <!-- Estilos personalizados -->
+   
+<script src="./JS/main.js"></script>
+
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <title>Vianny Fitness - RetosVIP</title>
+</head>
+<body>
+  <main>
+
+  <!-- Hero con navbar dentro -->
+   <!-- section #1 -->
+  <section class="hero position-relative">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content d-flex flex-column justify-content-center align-items-center text-center text-white px-3">
+
+   <!-- NAVBAR transparente -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute top-0 w-100 px-3 py-2 glass-navbar">
+  <div class="container">
+    <a class="navbar-logo fw-bold text-white" href="index.html">RetosVIP</a>
+
+
+    <li class="nav-item d-flex align-items-center"><a class="nav-link" href="javascript:void(0);" id="openCart"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+    viewBox="0 0 24 24" stroke-width="1.5"
+    stroke="currentColor" class="icon-mobile">
+    <path stroke-linecap="round" stroke-linejoin="round"
+      d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993
+         1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125
+         1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0
+         1 5.513 7.5h12.974c.576 0 1.059.435 1.119
+         1.007ZM8.625 10.5a.375.375 0 1 1-.75 0
+         .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1
+         1-.75 0 .375.375 0 0 1 .75 0Z" />
+  </svg></a></li> 
+
+    <button class="navbar-toggler" type="button" aria-label="Toggle navigation" id="menuToggle" style="border: none;">
+      <span class="fas fa-bars text-white fs-2"></span>
+    </button>
+    <div id="overlay"></div>
+    
+    <div class="mobile-menu d-lg-none" id="mobileMenu">
+      <button class="close-btn" id="closeBtn">&times;</button>
+      <ul class="navbar-nav flex-column">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Homess</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#planes" id="reto21dias">Reto 21 Días</a></li>
+        <li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre mi</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+        
+      </ul>
+    </div>
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="index.html#planes">Reto 21 Días</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="clientes.html">Clientes</a></li>
+        <li class="nav-item"><a class="nav-link text-white"  href="sobremi.html">Sobre mi</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="Contacto.html">Contacto</a></li>
+      </ul>
+
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+  <a href="javascript:void(0);" id="openCartdesktop" class="nav-link" role="button" aria-label="Abrir carrito">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+      viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" class="icon">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993
+          1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125
+          1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0
+          1 5.513 7.5h12.974c.576 0 1.059.435 1.119
+          1.007ZM8.625 10.5a.375.375 0 1 1-.75 0
+          .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1
+          1-.75 0 .375.375 0 0 1 .75 0Z" />
+    </svg>
+  </a>
+</li>
+
+      </ul>
+    
+  </div>
+</nav>
+
+    <!-- Contenido del hero -->
+<div class="text-white px-3 mt-5 pt-5 hero-animacion">
+  <h1 id="titulo" class="display-4 fw-bold animado cursor"></h1>
+  <p class="lead mt-3 animado" style="opacity: 0;">Únete a los RetosVIP y alcanza tu mejor versión desde casa</p>
+  <a href="#planes" class="btn btn-primary btn-lg mt-4 animado" style="opacity: 0;">¡Quiero el Reto!</a>
+</div>
+
+
+  </div> <!-- hero-content -->
+</section>
+
+
+
+  <!-- Sección Reto 21 Días -->
+  <section id="planes" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="img/reto21.jpg" alt="Reto 21 Días" class="img-fluid rounded shadow" />
+        </div>
+        <div class="col-md-6 text-center text-md-start">
+          <h2 class="fw-bold">Reto 21 Días</h2>
+          <p class="lead text-muted " style="text-align: justify !important;">
+            Entrena desde casa con un plan estructurado para transformar tu cuerpo en solo 21 días. Ideal para mujeres que buscan resultados rápidos y efectivos.
+          </p>
+          <ul class="list-unstyled mb-3">
+            <li>✅ Entrenamientos diarios</li>
+            <li>✅ Guía alimenticia</li>
+            <li>✅ Soporte por WhatsApp <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><img src="img/whatsapp-icon.png" alt="WhatsApp" style="width: 32px; vertical-align: middle;" /></a></li>
+            <li>✅ Sin necesidad de equipos</li>
+          </ul>
+          <h4 class="fw-bold mb-3">$19.99 USD</h4>
+          <button id="btn-agregar-reto"
+              class="btn btn-reto btn-lg agregar-carrito" 
+              data-nombre="Reto 21 Días" 
+              data-precio="19.99">
+              ¡Ordena ya!
+          </button>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </section>
+
+  <section id="beneficios" class="beneficios-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">Beneficios del Reto 21 Días</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="beneficio-item h-100">
+          <img src="img/image_1section.jpg" alt="Guía de alimentación" class="beneficio-icon img-fluid" />
+          <h3>Guía De Alimentación</h3>
+          <p>Llevar una dieta balanceada y variada será clave en tu reto, ya que es esencial para el bienestar físico. 🥗</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="beneficio-item h-100">
+          <img src="img/image_2section.jpg" alt="Rutina de Gym" class="beneficio-icon img-fluid" />
+          <h3>Rutina de Gym</h3>
+          <p>Obtendrás tu rutina para realizar los ejercicios desde Casa o GYM. 🏋️‍♀️</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="beneficio-item h-100">
+          <img src="img/image_3section.jpg" alt="Consejos Motivacionales" class="beneficio-icon img-fluid" />
+          <h3>Consejo Motivacionales</h3>
+          <p>Siempre comparto tips de motivación porque fortalecen la disciplina que te trajo hasta este punto 💪.</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="beneficio-item h-100">
+          <img src="img/image_4section.jpg" alt="Entrenamientos diarios" class="beneficio-icon img-fluid" />
+          <h3>Entrenamientos diarios</h3>
+          <p>Tendrás rutinas nuevas cada día para que mantengas la energía alta y no pierdas el ritmo 🔥.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+
+</main>
+
+
+  <footer class="footer mt-auto py-4  text-white">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      
+
+      <!-- Info de contacto -->
+       <section>
+<div class="barra-contacto d-flex flex-wrap justify-content-around align-items-center text-white py-4 px-3">
+  <div class="item-contacto d-flex align-items-center">
+    <a href="https://www.instagram.com/vianny_f.09/"><i class="fab fa-instagram icono"></i></a>
+    <div class="ms-2">
+      <div><strong>Instagram</strong></div>
+      <div><a href="https://www.instagram.com/vianny_f.09/">@vianny_f.09</a></div>
+    </div>
+  </div>
+  <div class="item-contacto d-flex align-items-center">
+    <a href=""><i class="fas fa-phone icono"></i></a>
+    <div class="ms-2">
+      <div><strong>Escribir al WhatsApp</strong></div>
+      <div><a href="+1 (829) 854-2153">+1 (829) 854-2153</a></div>
+    </div>
+  </div>
+  <div class="item-contacto d-flex align-items-center">
+    <a href="mailto:Habbo_victorman1@hotmail.com"><i class="fas fa-envelope icono"></i></a>
+    <div class="ms-2">
+      <div><strong>Para más Info</strong></div>
+      <div><a href="mailto:Habbo_victorman1@hotmail.com">info@retosvip.com</a></div>
+    </div>
+  </div>
+  <div class="item-contacto d-flex align-items-center">
+    <i class="fas fa-clock icono"></i>
+    <div class="ms-2">
+      <div><strong>Asistencia</strong></div>
+      <div class="text-success">24 Horas</div>
+    </div>
+  </div>
+</div>
+</section>
+    <hr class="border-light" />
+    
+    <div class="copyright text-center">
+      <p>Copyright © 2025 All rights reserved.</p>
+      <small>RetosVIP made by <a href="https://www.instagram.com/nerdtoday_bosstomorrow/" target="_blank" rel="noopener noreferrer" class="text-white">Victor Sierra</a></small>
+    </div>
+    
+  </div>
+</footer>
+
+<!-- Sidebar del carrito -->
+<div id="cartSidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h2>Mi Carrito</h2>
+    <span id="closeCart" class="close-btn">&times;</span>
+  </div>
+  <hr class="border-secondary" />
+     <div class="cart-items" id="cartItems">
+    <table class="table" id="cartTable">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Precio</th>
+          <th style="color: red;">Eliminar</th>
+        </tr>
+      </thead>
+      <tbody id="cartTableBody">
+        <!-- Aquí irán las filas dinámicas con JS -->
+      </tbody>
+    </table>
+    <p id="emptyCartMessage">Tu carrito está vacío.</p>
+    
+  </div>
+  <div class="cart-footer">
+    <button id="btn-checkout" class="checkout-btn" onclick="window.location.href= 'checkout.html'">Finalizar Compra.</button>
+    <button id="btnTransfer" class="checkout-btn">Pago via Transferencia.</button>
+  </div>
+</div>
+
+
+<div id="mensaje-carrito" style="display:none; position: fixed; top: 20px; right: 20px; background: #ff2e63; color: white; padding: 10px 20px; border-radius: 5px; z-index: 9999;">
+  Producto ya está en el carrito.
+</div>
+
+
+  <div class="popup-container">
+  <button class="close-popup">&times;</button>
+  <img src="img/tranferdatos.jpg" alt="Datos bancarios" class="popup-image" />
+  <div class="popup-message">Enviar voucher de la transferencia vía <a href="+1 (829) 854-2153" class="WhatsAppsss">WhatsApp</a> para confirmar el pago</div>
+</div>
+
+
+
+
+</body>
+</html>
