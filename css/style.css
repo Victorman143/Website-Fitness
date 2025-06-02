@@ -288,7 +288,7 @@ a:hover {
   }
 
   .hero-bg {
-    background-image: url('/Website-Fitness/fitness-web/img/iniciocell.png');
+    background-image: url('../img/iniciocell.png');
     background-size: cover;
     background-position: center top;
   }
