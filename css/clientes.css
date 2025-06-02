@@ -292,7 +292,7 @@ a:hover {
   }
 
   .hero-bg {
-    background-image: url('/img/inicioclientcell.jpg');
+    background-image: url('../img/inicioclientcell.jpg');
     background-size: cover;
     background-position: center top;
   }
