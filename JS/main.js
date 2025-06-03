@@ -234,45 +234,48 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const manejarBotonCarrito = () => {
-    const btnAgregar = document.getElementById('btn-agregar-reto');
-    const cartSidebar = document.getElementById('cartSidebar');
-    const overlay = document.getElementById('overlay');
-    
-    
+  const cartSidebar = document.getElementById('cartSidebar');
+  const overlay = document.getElementById('overlay');
 
+  // Escucha clics en cualquier botón con clase "agregar-carrito"
+  document.addEventListener('click', (e) => {
+    const boton = e.target.closest('.agregar-carrito');
 
-    if (btnAgregar) {
-      btnAgregar.addEventListener('click', () => {
-        const carrito = obtenerCarrito();
-        const id = 'reto-21-dias';
-        const existente = carrito.find(item => item.id === id);
+    if (boton) {
+      const nombre = boton.getAttribute('data-nombre');
+      const precio = boton.getAttribute('data-precio'); // ⬅ NO usar parseFloat aquí
+      const id = nombre.toLowerCase().replace(/\s+/g, '-'); // genera ID como reto-21-dias
 
-        if (existente) {
-          // Ya está en el carrito, no agregamos más
-          mostrarMensajeCarrito('Este producto ya está en el carrito.');
-          return;
-        } else {
+      const carrito = obtenerCarrito();
+      const existente = carrito.find(item => item.id === id);
 
-          cartSidebar.classList.add('open');
-          overlay.classList.add('active');
-          
-          
-          carrito.push({
-            id,
-            nombre: 'Reto 21 Días',
-            precio: 19.99,
-            cantidad: 1
-          });
-        }
+      if (existente) {
+        mostrarMensajeCarrito('Este producto ya está en el carrito.');
+        return;
+      }
 
-        guardarCarrito(carrito);
-        actualizarContadorCarrito();
-        renderCartFull(); // refrescar sidebar en vivo
+      // Mostrar el carrito
+      cartSidebar.classList.add('open');
+      overlay.classList.add('active');
+
+      // Agregar al carrito
+      carrito.push({
+        id,
+        nombre,
+        precio, // lo guardamos como string, tal como está (ej: "1000")
+        cantidad: 1
       });
-    }
 
-    actualizarContadorCarrito();
-  };
+      guardarCarrito(carrito);
+      actualizarContadorCarrito();
+      renderCartFull(); // refresca visualmente
+    }
+  });
+
+  actualizarContadorCarrito();
+};
+
+
 
   const renderCartFull = () => {
   const carrito = obtenerCarrito();
@@ -302,15 +305,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const tr = document.createElement('tr');
 
     tr.innerHTML = `
-      <td>${item.nombre}</td>
-      <td>${item.cantidad}</td>
-      <td>$${item.precio.toFixed(2)}</td>
-      <td>
-        <button class="btn-eliminar" aria-label="Eliminar ${item.nombre}" data-id="${item.id}">
-          🗑️
-        </button>
-      </td>
-    `;
+  <td>${item.nombre}</td>
+  <td>${item.cantidad}</td>
+  <td>$${item.precio}</td>
+  <td>
+    <button class="btn-eliminar" aria-label="Eliminar ${item.nombre}" data-id="${item.id}">
+      🗑️
+    </button>
+  </td>
+`;
+
 
     tbody.appendChild(tr);
   });
