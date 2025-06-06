@@ -193,6 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
   overlay.addEventListener('click', () => {
     cartSidebar.classList.remove('open');
     popupcontainer.style.display = 'none';
+    document.body.style.overflow = ""; // Reactiva scroll
     overlay.classList.remove('active');
   });
 } else {
