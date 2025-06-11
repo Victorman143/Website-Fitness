@@ -623,6 +623,8 @@ a:hover {
   .btn-outline-primary {
     padding: 0.6rem 1.2rem;
     font-size: 0.85rem;
+    color: #000;
+    transition: background-color 0.3s ease;
   }
 
 
