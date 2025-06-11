@@ -253,16 +253,39 @@
 </div>
 
 
-<div id="mensaje-carrito" style="display:none; position: fixed; top: 20px; right: 20px; background: #ff2e63; color: white; padding: 10px 20px; border-radius: 5px; z-index: 9999;">
-  Producto ya está en el carrito.
-</div>
+<div id="mensaje-carrito" style="display:none; position: fixed; top: 20px; right: 20px; background: #ff2e63; color: white; padding: 10px 20px; border-radius: 5px; z-index: 9999;"></div>
+<div id="mensaje-capiado" style="display:none; position: fixed; top: 20px; right: 20px; background: #ff2e63; color: white; padding: 10px 20px; border-radius: 5px; z-index: 999999;"></div>
 
-<div class="popup-container">
+
+  <div class="popup-container">
+    <div class="decoracion-tarjetas">
+    <img src="img/tarjetaspopup.png" alt="Tarjeta 1" class="tarjeta tarjeta1">
+  </div>
   <button class="close-popup">&times;</button>
-  <img src="img/tranferdatos.jpg" alt="Datos bancarios" class="popup-image" />
-  <div class="popup-message">Enviar voucher de la transferencia vía <a href="https://t.me/vianny_f" class="Telegrammmm">Telegram</a> para confirmar el pago</div>
-</div>
 
+  <h2 class="text-center mb-3">Datos de Pago</h2>
+  <p class="text-center fw-bold">VIANNY P. FERNANDEZ F. <br> Cédula: 402-14196582</p>
+
+  <div class="mb-4">
+    <div class="content border rounded p-3 mb-3 fondo-reservas">
+      <h5 class="mb-1">Banco RESERVAS</h5>
+      <p class="mb-1">Tipo: Ahorros</p>
+      <p class="mb-2" id="cuentaReservas">9604596648</p>
+      <button class="btn-outline-primary" onclick="copiarAlPortapapeles('cuentaReservas')">Copiar Cuenta</button>
+    </div>
+
+    <div class="content border rounded p-3 fondo-popular">
+      <h5 class="mb-1">Banco POPULAR</h5>
+      <p class="mb-1">Tipo: Ahorros</p>
+      <p class="mb-2" id="cuentaPopular">826195109</p>
+      <button class="btn-outline-primary" onclick="copiarAlPortapapeles('cuentaPopular')">Copiar Cuenta</button>
+    </div>
+  </div>
+
+  <div class="text-center popup-message">
+    Enviar voucher de la transferencia vía <a href="https://t.me/vianny_f" class="Telegrammmm">Telegram</a> para confirmar el pago.
+  </div>
+</div>
 
   
 </body>
