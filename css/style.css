@@ -589,6 +589,18 @@ a:hover {
   color: #555;
 }
 
+.btn-outline-primary{
+  background-color: var(--rosa-claro-trans);
+  border-color: var(--rosa-claro);
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
 
 
 }
