@@ -589,6 +589,8 @@ a:hover {
   color: #555;
 }
 
+
+
 }
 
 
@@ -665,15 +667,6 @@ a:hover {
   cursor: pointer;
   font-size: 1.2rem;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -783,8 +776,8 @@ a:hover {
 
 /* Contenedor de imagen */
 .popup-container {
-  display: none; /* Importante: oculto por defecto */
-  position: fixed; /* Para que flote encima de todo */
+  display: none; 
+  position: fixed; 
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -798,12 +791,12 @@ a:hover {
   z-index: 9999999999;
 }
 
-/* Imagen con buen tamaño */
-.popup-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+.popup-container .content{
+  font-weight: 600;
+  font-size: 1.3rem;
 }
+
+
 
 /* Botón cerrar */
 .close-popup {
@@ -820,11 +813,60 @@ a:hover {
   cursor: pointer;
 }
 
+.decoracion-tarjetas {
+  position: absolute;
+  top: -25px;
+  left: -70px;
+  z-index: 1;
+}
+
+.tarjeta {
+  width: 200px;
+  height: auto;
+  position: absolute;
+}
+
+.tarjeta1 {
+  transform: rotate(-30deg);
+  top: 0;
+  left: 0;
+}
+
+
+
+
 .popup-message {
   margin-top: 12px;
   font-size: 15px;
   color: #444;
   font-weight: 500;
+}
+
+.btn-outline-primary{
+  background-color: var(--rosa-claro-trans);
+  border-color: var(--rosa-claro);
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.fondo-reservas {
+  background-image: url('../img/reservas.jpg'); 
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.fondo-popular {
+  background-image: url('../img/popular.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
 }
 
 

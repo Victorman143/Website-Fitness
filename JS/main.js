@@ -390,4 +390,27 @@ const btnTransfer = document.getElementById("btnTransfer");
     document.body.style.overflow = ""; // Reactiva scroll
   });
 
+
 });
+
+const mostrarMensaje = (mensaje) => {
+  const contenedor = document.getElementById('mensaje-capiado');
+  if (!contenedor) return;
+  
+  contenedor.textContent = mensaje;
+  contenedor.style.display = 'block';
+
+  // Ocultar después de 3 segundos
+  setTimeout(() => {
+    contenedor.style.display = 'none';
+  }, 3000);
+};
+
+const mensajecopíado = getElementById('mensaje-capiado')
+function copiarAlPortapapeles(id) {
+    const texto = document.getElementById(id).innerText;
+    navigator.clipboard.writeText(texto).then(() => {
+      mostrarMensaje('Numero de cuenta copiado')
+      mensajecopíado.style.display = 'block';
+    });
+  }
