@@ -589,43 +589,7 @@ a:hover {
   color: #555;
 }
 
-/* .popup-container {
-    width: 95%;
-    max-width: 320px;
-    padding: 0.75rem;
-  }
 
-  .popup-container .content {
-    font-size: 1.1rem;
-  }
-
-  .close-popup {
-    width: 28px;
-    height: 28px;
-    font-size: 20px;
-    top: -10px;
-    right: -10px;
-  }
-
-  .tarjeta {
-    width: 140px;
-  }
-
-  .decoracion-tarjetas {
-    top: -20px;
-    left: -50px;
-  }
-
-  .popup-message {
-    font-size: 14px;
-  }
-
-  .btn-outline-primary {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.85rem;
-    color: #000;
-    transition: background-color 0.3s ease;
-  } */
 
 
 }
@@ -888,6 +852,7 @@ a:hover {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   border-radius: 30px;
+  color: #000;
   transition: background-color 0.3s ease;
 }
 
